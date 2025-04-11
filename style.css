@@ -16,7 +16,7 @@ main {
     background-color: #272343;
     padding-top: 5px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     font-size: 12px;
     color: white;
@@ -24,14 +24,24 @@ main {
 .divnavtext {
     display: flex;
     align-items: center;
-    margin-right: 15px;
 }
-.nav1pravo {
-    margin-left: 910px;
+.divnavtext1 {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+}
+.nav1vlevo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:310px;
 }
 .imgnav1 {
     margin-right: 5px;
     margin-left: 5px;
+}
+.imgnav12 {
+    margin-right: 24px;
 }
 .imgnav2 {
     margin-left: 30px;
@@ -46,10 +56,27 @@ a {
     background-color: #F0F2F3;
     padding-top: 5px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     font-size: 15px;
     color: black;
+}
+.nav2vlevo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 160px;
+}
+.nav2pravo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 160px;
+}
+.divnav2text {
+    display: flex;
+    align-items: center;
+    margin-right: 254px;
 }
 .navblock {
     width: 413px;
@@ -61,7 +88,6 @@ a {
     justify-content: space-between;
     padding: 10px;
     border-radius: 5px; 
-    margin-left: 254px;
 } 
 .navblock2 {
     width: 120px;
@@ -72,7 +98,6 @@ a {
     justify-content: space-between;
     padding: 10px;
     border-radius: 5px; 
-    margin-left: 254px;
 }
 .navblock3 {
     width: 44px;
@@ -95,4 +120,46 @@ a {
     padding: 10px;
     border-radius: 5px; 
     margin-left: 12px;
+}
+.nav3 {
+    width: 100%;
+    height: 75px;
+    background-color: white;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    color: black;
+}
+.navvlevo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+.anav3 {
+    color: #636270;
+    text-decoration: none;
+    margin-left: 32px;
+    transition: color 0.5s;
+}
+.anav3:hover {
+    color: #007580;
+  }
+.navblock5{
+    width: 176px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #E1E3E5;
+    border-style: solid;
+    border-width: 1px;
+
+}
+.p1ntextcolornav3 {
+    color: #636270;
 }
