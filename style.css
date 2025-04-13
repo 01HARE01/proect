@@ -6,8 +6,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-main {
-    max-width: 1320px;
+.main {
+    max-width: 1250px;
     margin: 0 auto;
 }
 .nav1 {
@@ -131,6 +131,9 @@ a {
     align-items: center;
     font-size: 15px;
     color: black;
+    box-shadow: 0 4px 2px -2px #E1E3E5;
+    position: relative;
+    z-index: 2;
 }
 .navvlevo {
     display: flex;
@@ -163,3 +166,283 @@ a {
 .p1ntextcolornav3 {
     color: #636270;
 }
+.glav {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width:  1740px;
+    height: 850px;
+    margin-left: 90px;
+    background-color: #F0F2F3;
+    border-bottom-left-radius: 48px;
+    border-bottom-right-radius: 48px;
+    position: relative; 
+    z-index: --;
+}
+.glavimg {
+    margin-left: 88px;
+}
+.glavimgbatton {
+    margin-left: 20px;
+}
+.glavimgbatton1 {
+    margin-right: 88px;
+}
+.glavimgchair {
+    margin-bottom: 120px;
+    margin-right: 30px;
+}
+.glavtextp1 {
+    font-size: 14px;
+    color: #272343;
+}
+.glavtexth1 {
+    font-size: 68px;
+    color: #272343;
+}
+.glavblock {
+    margin-left: 70px;
+}
+.glavbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 171px;
+    height: 52px;
+    background-color: #029FAE;
+    color: white;
+    border-radius:10px ;
+    margin-top: 40px;
+}
+.blockFeature {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1320px;
+    height:150px;
+    background-color: white;
+    position: absolute;
+    margin-top: 836px;
+    border-radius: 10px;
+}
+.textFeature {
+    display: flex;
+    align-items: center;
+}
+.Featuretext1 {
+    color: #9A9CAA;
+}
+.Featureblock {
+    padding-left: 10px;
+}
+.h4glav {
+    padding-bottom: 6px;
+}
+.companylogo {
+    width: 1321px;
+    height: 139px;
+    background-color: white;
+    margin-top: 101px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.imgcompanylogo {
+    margin-left: 94px;
+}
+.Featured-Products {
+    display: grid;
+    align-items: center;
+    grid-template-columns:1fr,1fr,1fr;
+    margin-bottom: 20px;
+}
+.navHeading {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+.nav-buttons {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+}
+.products {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr,1fr,1fr;
+    grid-column-gap:24px;
+    grid-row-gap:24px;
+}
+.blockproduct1 {
+    height: 377px;
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-radius: 10px;
+}
+.blockproduct2 {
+    height: 377px;
+    background-color: white;
+    border-radius: 10px;
+}
+.blockproduct3 {
+    height: 377px;
+    background-color: white;
+    border-radius: 10px;
+}
+.blockproduct4 {
+    height: 377px;
+    background-color: white;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    border-radius: 10px;
+}
+.imgproduct0 {
+   margin-bottom: 14px; 
+}
+.imgproduct {
+    position: absolute;
+    top: 1400px;
+    left: 320px;
+}
+.imgproduct2 {
+    position: absolute;
+    top: 1400px;
+    left: 560px;
+}
+.imgproduct3 {
+    position: absolute;
+    top: 1400px;
+    left: 660px;
+}
+.navedprodeuct {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.navedprodeuct:hover {
+    color: #007580;
+  }
+.h4product {
+   margin-top: 10px;
+}
+.blockcartbotton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blockcart {
+    display: flex;
+    flex-direction: column;
+}
+.price-box {
+    display: flex;
+    align-items: center;
+}
+.old-price {
+    color: #a0aec0;
+    text-decoration: line-through;
+    font-size: 13px;
+    margin-left: 4px;
+    margin-top: 7px;
+}
+.Top-categories {
+    display: grid;
+    align-items: center;
+    grid-template-columns:1fr,1fr,1fr;
+    margin-bottom: 20px;
+    margin-top: 84px;
+}
+.categories {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr,1fr,1fr,1fr,1fr,1fr;
+    grid-column-gap:24px;
+    grid-row-gap:24px;
+}
+.blockcategories1 {
+    height: 424px;
+    grid-column-start: 0;
+    grid-column-end: 1;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.8);
+}
+.blockcategories2 {
+    
+    height: 424px;
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+.blockcategories3 {
+    
+    height: 424px;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+.blockcategories4 {
+   
+    height: 424px;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+.blockcategories5 {
+    height: 424px;
+    grid-column-start: 7;
+    grid-column-end: 8;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.8);
+}
+.bloccard {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px;
+  }
+  .bloccard1 {
+    height: 70px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px;
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.8);
+  }
+  .bloccard2 {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px;
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.8);
+  }
