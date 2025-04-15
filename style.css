@@ -7,19 +7,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 .main {
-    max-width: 1250px;
+    max-width: 1320px;
     margin: 0 auto;
 }
 .nav1 {
     width: 100%;
     height: 45px;
     background-color: #272343;
-    padding-top: 5px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 12px;
-    color: white;
 }
 .divnavtext {
     display: flex;
@@ -30,11 +24,17 @@ body {
     align-items: center;
     margin-right: 24px;
 }
-.nav1vlevo {
+.mainnav1 { 
+    height: 45px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-left:310px;
+    justify-content: space-between;
+    font-size: 12px;
+    color: white;
+}
+.nav1pravblock { 
+    display: flex;
+    align-items: center;
 }
 .imgnav1 {
     margin-right: 5px;
@@ -54,7 +54,9 @@ a {
     width: 100%;
     height: 84px;
     background-color: #F0F2F3;
-    padding-top: 5px;
+}
+.mainnav2 {
+    height: 84px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -64,14 +66,12 @@ a {
 .nav2vlevo {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-right: 160px;
+    margin-left: 135px;
 }
 .nav2pravo {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-left: 160px;
+    margin-right: 135px;
 }
 .divnav2text {
     display: flex;
@@ -124,16 +124,18 @@ a {
 .nav3 {
     width: 100%;
     height: 75px;
-    background-color: white;
-    padding-top: 5px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 15px;
-    color: black;
     box-shadow: 0 4px 2px -2px #E1E3E5;
     position: relative;
     z-index: 2;
+}
+.mainnav3 {
+    height: 75px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    color: black;
 }
 .navvlevo {
     display: flex;
@@ -189,8 +191,8 @@ a {
     margin-right: 88px;
 }
 .glavimgchair {
-    margin-bottom: 120px;
-    margin-right: 30px;
+    margin-bottom: 110px;
+    margin-right: 35px;
 }
 .glavtextp1 {
     font-size: 14px;
@@ -222,6 +224,7 @@ a {
     height:150px;
     background-color: white;
     position: absolute;
+    margin-right: 60px;
     margin-top: 836px;
     border-radius: 10px;
 }
@@ -248,7 +251,7 @@ a {
     justify-content: start;
 }
 .imgcompanylogo {
-    margin-left: 94px;
+    margin-left: 106px;
 }
 .Featured-Products {
     display: grid;
@@ -273,6 +276,11 @@ a {
     grid-column-gap:24px;
     grid-row-gap:24px;
 }
+.bcimage {
+    display: flex;
+    width: 312px;
+    height: 312px;
+}
 .blockproduct1 {
     height: 377px;
     background-color: white;
@@ -283,11 +291,15 @@ a {
 .blockproduct2 {
     height: 377px;
     background-color: white;
+    grid-column-start: 2;
+    grid-column-end: 3;
     border-radius: 10px;
 }
 .blockproduct3 {
     height: 377px;
     background-color: white;
+    grid-column-start: 3;
+    grid-column-end: 4;
     border-radius: 10px;
 }
 .blockproduct4 {
@@ -297,23 +309,17 @@ a {
     grid-column-end: 5;
     border-radius: 10px;
 }
-.imgproduct0 {
-   margin-bottom: 14px; 
-}
 .imgproduct {
-    position: absolute;
-    top: 1400px;
-    left: 320px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 .imgproduct2 {
-    position: absolute;
-    top: 1400px;
-    left: 560px;
+    margin-top: 20px;
+    margin-left: 175px;
 }
 .imgproduct3 {
-    position: absolute;
-    top: 1400px;
-    left: 660px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 .navedprodeuct {
     color: #000000;
@@ -334,6 +340,7 @@ a {
 .blockcart {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
 .price-box {
     display: flex;
@@ -446,3 +453,50 @@ a {
     padding: 15px;
     box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.8);
   }
+.navour-poduser {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+.navour-poduserh {
+    font-size: 35px;
+    color: #272343;
+}
+.navour-poduser1 {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+.navedourprodes {
+    color: #9A9CAA;
+    text-decoration: none;
+    transition: color 0.5s;
+    font-size: 18px;
+}
+.navedourprodes:hover {
+    color: #272343;
+  }
+.blocknavedour {
+    width: 46px;
+    height: 2px;
+    background-color: green;
+}
+.blocknavedour2 {
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ color: #272343;
+}
+.blocknavedour1 {
+    margin-left: 16px;
+    margin-bottom: 3px;
+}
+.our-products {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr,1fr,1fr;
+    grid-column-gap:24px;
+    grid-row-gap:24px;
+}
