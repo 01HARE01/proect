@@ -69,12 +69,12 @@ a {
 .nav2vlevo {
     display: flex;
     align-items: center;
-    margin-left: 135px;
+    margin-left: 10%;
 }
 .nav2pravo {
     display: flex;
     align-items: center;
-    margin-right: 135px;
+    margin-right: 10%;
 }
 .divnav2text {
     display: flex;
@@ -92,6 +92,17 @@ a {
     padding: 10px;
     border-radius: 5px; 
 } 
+.nav-input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #272343;
+    font-size: 16px;
+    flex: 1;
+  }
+  .nav-input::placeholder {
+    color: #9A9CAA;
+  }
 .navblock2 {
     width: 120px;
     height: 44px;
@@ -172,33 +183,36 @@ a {
     color: #636270;
 }
 .glavmain {
-    max-width: 1740px;
-    margin: 0 auto;
+    margin: auto;
+    height: 850px;
+    background-color: #F0F2F3; 
+    position: relative; 
+    z-index: --;
+    border-bottom-left-radius: 48px;
+    border-bottom-right-radius: 48px;
 }
 .glav {
     display: flex;
     align-items:center;
     justify-content: center;
-    width:  1740px;
-    height: 850px;
-    background-color: #F0F2F3;
-    border-bottom-left-radius: 48px;
-    border-bottom-right-radius: 48px;
-    position: relative; 
-    z-index: --;
 }
 .glavimg {
+    position: absolute;
     margin-left: 88px;
+    margin-top: 370px;
 }
 .glavimgbatton {
     margin-left: 20px;
 }
 .glavimgbatton1 {
-    margin-right: 88px;
+    margin-left: 1700px;
+    margin-top: 370px;
+    position: absolute;
 }
 .glavimgchair {
+    width: 647px;
+    height: 740px;
     margin-bottom: 110px;
-    margin-right: 35px;
 }
 .glavtextp1 {
     font-size: 14px;
@@ -207,9 +221,6 @@ a {
 .glavtexth1 {
     font-size: 68px;
     color: #272343;
-}
-.glavblock {
-    margin-left: 70px;
 }
 .glavbutton {
     display: flex;
@@ -220,7 +231,7 @@ a {
     background-color: #029FAE;
     color: white;
     border-radius:10px ;
-    margin-top: 40px;
+    margin-top: 24px;
 }
 .blockFeature {
     display: flex;
@@ -268,6 +279,9 @@ a {
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
+    margin-top: 80px;
+    font-size: 22px;
+    color: #272343;
 }
 .nav-buttons {
     display: grid;
@@ -281,6 +295,7 @@ a {
     gap: 24px;
 }
 .slider-wrapper {
+    width: 100%;
     overflow: hidden;
     margin-top: 40px;
 }
@@ -288,7 +303,7 @@ a {
     display: grid;
     grid-auto-flow: column; 
     grid-auto-columns: 315px; 
-    gap: 20px; 
+    gap: 20px;
     transition: transform 0.5s ease;  
 }
 .slider-controls img {
@@ -297,32 +312,9 @@ a {
     cursor: pointer; 
     margin: 0 5px; 
   }
-  .blockproduct1 {
+  .card {
     height: 377px;
     background-color: white;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    border-radius: 10px;
-}
-.blockproduct2 {
-    height: 377px;
-    background-color: white;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    border-radius: 10px;
-}
-.blockproduct3 {
-    height: 377px;
-    background-color: white;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    border-radius: 10px;
-}
-.blockproduct4 {
-    height: 377px;
-    background-color: white;
-    grid-column-start: 4;
-    grid-column-end: 5;
     border-radius: 10px;
 }
 .bcimage {
@@ -459,13 +451,6 @@ a {
     padding: 15px;
     box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.8);
   }
-  .bloccard2 {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 15px;
-    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.8);
-  }
 .navour-poduser {
     display: flex;
     align-items: center;
@@ -478,6 +463,7 @@ a {
     color: #272343;
 }
 .navour-poduser1 {
+    position: relative;
     display: flex;
     align-items: center;
     margin-top: 18px;
@@ -488,20 +474,55 @@ a {
     transition: color 0.5s;
     font-size: 18px;
 }
-.navedourprodes:hover {
+.tab-menu {
+    position: relative;
+    display: inline-flex;
+    gap: 40px;
+    margin-top: 20px;
+    border-bottom: 0px solid #ccc;
+    padding-bottom: 10px;
+  }
+.tab {
+    position: relative;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #272343;
+    transition: color 0.3s;
+    padding: 5px 0;
+}
+.tab:hover {
     color: #272343;
   }
-.blocknavedour {
-    width: 46px;
-    height: 2px;
-    background-color: green;
+.tab.active {
+    font-weight: 600;
+    color: #272343;
+  }
+.tab-indicator {
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    background-color: #0f9d58;
+    transition: transform 0.3s ease, width 0.3s ease;
 }
-.blocknavedour2 {
- display: flex;
- align-items: center;
- flex-direction: column;
- color: #272343;
+.tab-content {
+    margin-top: 40px;
 }
+.tab-section.active {
+    display: block;
+}
+.tab-section {
+    display: none;
+    width: 100%;
+  }
+.card-grid {
+    display: grid;
+    grid-auto-columns: 315px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+  }
 .blocknavedour1 {
     margin-left: 16px;
     margin-bottom: 3px;
@@ -634,6 +655,20 @@ a {
     align-self: start;
     margin-top: 90px;
 }
+.email-input {
+    padding: 10px 16px;
+    font-size: 14px;
+    color: #272343;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    outline: none;
+    width: 285px;
+  }
+  .email-input::placeholder {
+    color: #9A9CAA;
+  }
+  
 .imgnavfot {
     margin-right: 5px;
 }
@@ -789,7 +824,7 @@ li {
     padding-left: 20px;
     margin-top: 24px;
 }
-.divemail {
+.divemail1 {
     width: 584px;
     height: 50px;
     display: flex;
@@ -802,6 +837,22 @@ li {
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 16px;
+}
+.inputfield {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+    color: #272343;
+    width: 100%;
+}
+.inputfield::placeholder {
+    color: #9A9CAA;
+}
+.eye-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }
 .h5log {
     color: #9A9CAA;
@@ -846,4 +897,151 @@ li {
 }
 .logimgbatton {
     margin-left: 12px;
+}
+@media(max-width:1440px) {
+    .main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .nav2vlevo {
+        display: flex;
+        align-items: center;
+        margin-left: 6.5%;
+    }
+    .nav2pravo {
+        display: flex;
+        align-items: center;
+       margin-right: 6.5%;
+    }
+    .glavmain {
+        max-width: 1260px;
+        margin: 0 auto;
+    }
+    .glavmain {
+        margin: auto;
+        height: 750px;
+        background-color: #F0F2F3; 
+        position: relative; 
+        z-index: --;
+        border-bottom-left-radius: 48px;
+        border-bottom-right-radius: 48px;
+    }
+    .glav {
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+    .glavimg {
+        display: none;
+    }
+    .glavimgbatton {
+        margin-left: 20px;
+    }
+    .glavimgbatton1 {
+        display: none;
+    }
+    .glavimgchair {
+        width: 647px;
+        height: 650px;
+        margin-bottom: 100px;
+    }
+    .glavtexth1 {
+        font-size: 50px;
+        color: #272343;
+    }
+    .glavbutton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 171px;
+        height: 52px;
+        background-color: #029FAE;
+        color: white;
+        border-radius:10px ;
+    }
+    .blockFeature {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 1200px;
+        height:150px;
+        background-color: white;
+        position: absolute;
+        margin-top: 750px;
+        border-radius: 10px;
+    }
+    .companylogo {
+        width: 1200px;
+        height: 139px;
+        background-color: white;
+        margin-top: 101px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .imgcompanylogo {
+        margin-left: 86px;
+    }
+    .Featured-Products {
+        display: grid;
+        align-items: center;
+        grid-template-columns:1fr,1fr,1fr;
+        margin-bottom: 20px;
+        margin-top: 33px;
+    }
+    .blockproduct {
+        height: 377px;
+        background-color: white;
+        border-radius: 10px;    
+    }
+    .imageproduct {
+        width: 285px;
+        height: 285px;
+        border-radius: 10px;
+    }
+    .bcimage {
+        display: flex;
+        width: 285px;
+        height: 285px;
+        border-radius: 10px;
+    }
+    .slider-track {
+        grid-auto-columns: 285px;
+        grid-template-columns: repeat(4, 1fr); 
+      }
+    .imgproduct {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .imgproduct2 {
+        margin-top: 20px;
+        margin-left: 160px;
+    }
+    .categories {
+        display: grid;
+        grid-template-columns: 1fr 1200px 1fr;
+        align-items: stretch;
+        gap: 20px;
+        margin-top: 40px;
+    }
+    .card-grid {
+        grid-auto-columns: 285px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 20px 0;
+      }
+      .grinline1 {
+        width: 568px;
+        height: 180px;
+        font-size: 20px;
+        padding-left: 15px;
+        line-height: 1.5;
+        color: #636270;
+    }
+    .grinline {
+        width: 2px;
+        height: 180px;
+        background-color: #029FAE;
+        margin: 20px;
+    }
 }

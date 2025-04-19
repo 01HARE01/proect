@@ -37,7 +37,7 @@
                         <h1>Comforty</h1>
                     </div></a>
                     <div class="navblock">
-                        <p1>Search here...</p1>
+                        <input type="text" placeholder="Search here..." class="nav-input">
                         <img  src="image/search 1.png" width="22px" height="22px">
                     </div>
                 </div>
@@ -90,10 +90,10 @@
         <section class="seclog">
             <div class="divlog">
                 <h1>Sign In</h1>
-                <div class="divemail"><h4 class="h5fot">Email</h4></div>
-                <div class="divemail">
-                    <h4 class="h5log">Password</h4>
-                    <img src="image/Eye.png" alt="">
+                <div class="divemail"><input type="email" class="inputfield" placeholder="Email"></div>
+                <div class="divemail1">
+                    <input type="password" id="passwordInput" class="inputfield" placeholder="Password"  >   
+                    <img src="image/Eye.png" class="eye-icon" onclick="togglePassword()">
                 </div>
                 <div class="divforgetpassword">
                     <div class="divremmeber-me">
@@ -151,7 +151,7 @@
                     <div class="fotnavblock4">
                         <h4 class="h5fot">NEWSLETTER</h4>
                         <div class="blockfotglavbotton">
-                            <div class="blockfotbotton1"><h4 class="h5fot">Your email</h4></div>
+                            <input type="email" class="email-input" placeholder="Your email">
                             <div class="blockfotbotton2"><h4 class="h5fot1">Subscribe</h4></div>
                         </div>
                         <p1 class="fottext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Nullam tincidunt erat enim. </p1>
@@ -174,6 +174,13 @@
                     </div>
             </section>
         </footer>
+        <script>
+            function togglePassword() {
+              const passwordField = document.getElementById("passwordInput");
+              const type = passwordField.getAttribute("type") === "password" ? "text" : "password";
+              passwordField.setAttribute("type", type);
+            }
+          </script>          
     </main>
 </body>
 </html>
