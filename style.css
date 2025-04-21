@@ -1222,7 +1222,7 @@ li {
         margin: 0 5px; 
       }
       .card {
-        height: 377px;
+        height: 300px;
         background-color: white;
         border-radius: 10px;
     }
@@ -2109,7 +2109,7 @@ li {
         margin: 0 5px; 
       }
       .card {
-        height: 377px;
+        height: 330px;
         background-color: white;
         border-radius: 10px;
     }
@@ -2936,6 +2936,14 @@ li {
         display: flex;
         align-items: center;
     }
+    .imgFeature {
+        width: 35px;
+        height: 35px;
+    }
+    .imgFeature1 {
+        width: 45px;
+        height: 35px;
+    }
     .Featuretext1 {
         color: #9A9CAA;
         font-size: 11px;
@@ -3019,7 +3027,8 @@ li {
         grid-auto-flow: column; 
         grid-auto-columns: max-content;
         gap: 20px;
-        transition: transform 0.5s ease;  
+        transition: transform 0.5s ease; 
+        margin-bottom: 20px; 
     }
     .slider-controls img {
         width: 44px;
@@ -3028,7 +3037,7 @@ li {
         margin: 0 5px; 
       }
       .card {
-        height: 377px;
+        height: 300px;
         background-color: white;
         border-radius: 10px;
     }
@@ -3290,7 +3299,7 @@ li {
     }
     .grinline {
         width: 2px;
-        height: 150px;
+        height: 185px;
         background-color: #029FAE;
         margin: 40px;
     }
