@@ -9,6 +9,32 @@
 <body>
     <header>
         <nav class="nav1">
+            <div class="navmobile main">
+                <div class="navmobilelogo">
+                    <img src="image/488d3a2d-1a50-4678-b1da-98caf6a47636.png" width="35px" height="35px">
+                    <h1>Comforty</h1>
+                </div>
+                <div class="navmobilelogo">
+                    <div class="search-container">
+                        <div id="search-icon" class="search-icon">
+                            <img src="image/search 1.png" >
+                        </div>
+                        <input id="search-input" type="text" class="search-input" placeholder="Ищите что-то..." />
+                    </div>
+                    <div class="burger" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+                <div class="side-menu" id="sidemenu">
+                    <a href="login.html">My profile</a>
+                    <a href="#">Favorite</a>
+                    <a href="#">Shopping cart</a>
+                    <a href="#">Top categorias</a>
+                </div>
+                <div class="overlay" id="overlay"></div>
             <div class="mainnav1 main">
                     <div class="divnavtext">
                         <img class="imgnav1" src="image/Vector.png" height="10px" width="13px">
@@ -89,7 +115,7 @@
                     </a>    
                 </div>
                     <img class="glavimgchair" src="image/Group 53.png" >
-                    
+                    <img class="glavimgchair1" src="image/Group 57.png"  height="250px">
                 <div class="blockFeature">
                     <div class="textFeature">
                         <img src="image/box.png" width="46px" height="46px">
@@ -144,16 +170,16 @@
         <section class="slider-wrapper main" id="wrapper1">
             <div class="slider-track" id="track1">
                 <div class="blockproduct">
-                    <div class="bcimage" style="background-image: url(image/Image.png);">
-                        <img class="imgproduct" id="prevSlide" src="image/Products Status.png" width="49px" height="26px">
+                    <div class="bcimage " style="background-image: url(image/Image.png);">
+                        <img class="imgproduct " id="prevSlide" src="image/Products Status.png" width="49px" height="26px">
                         <img class="imgproduct2" id="nextSlide" src="image/Heart.png" width="44px" height="44px">
                     </div>
-                    <div class="blockcartbotton">
+                    <div class="blockcartbotton ">
                         <div class="blockcart">
                             <a href="#" class="navedprodeuct">Library Stool Chair</a>
                             <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                         </div>
-                        <img src="image/Add Cart.png" width="44px" height="44px">
+                        <img class="imgbuy" src="image/Add Cart.png" width="44px" height="44px">
                     </div>
                 </div>
                 <div class="blockproduct">
@@ -168,10 +194,10 @@
                                 <p1 class="old-price">$39</p1>
                             </div>
                         </div>
-                        <img src="image/Add Cart (1).png" width="44px" height="44px">
+                        <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                     </div>
                 </div>
-                <div class="blockproduct">
+                <div class="blockproduct blockproduct2">
                     <img class="imageproduct" src="image/Image (2).png" >
                     <div class="blockcartbotton">
                         <div class="blockcart">
@@ -181,7 +207,7 @@
                         <img src="image/Add Cart (1).png" width="44px" height="44px">
                     </div>
                 </div>
-                <div class="blockproduct">
+                <div class="blockproduct blockproduct2">
                     <img class="imageproduct" src="image/Image (3).png">
                     <div class="blockcartbotton">
                         <div class="blockcart">
@@ -191,7 +217,7 @@
                         <img src="image/Add Cart (1).png" width="44px" height="44px">
                     </div>
                 </div>
-                <div class="blockproduct">
+                <div class="blockproduct blockproduct2">
                     <img class="imageproduct" src="image/Image (3).png">
                     <div class="blockcartbotton">
                         <div class="blockcart">
@@ -201,7 +227,7 @@
                         <img src="image/Add Cart (1).png" width="44px" height="44px">
                     </div>
                 </div>
-                <div class="blockproduct">
+                <div class="blockproduct blockproduct2">
                     <img class="imageproduct" src="image/1bda3a9b87459e7d85557a6fc7e3970f 1 (1).png">
                     <div class="blockcartbotton">
                         <div class="blockcart">
@@ -211,7 +237,7 @@
                         <img src="image/Add Cart (1).png" width="44px" height="44px">
                     </div>
                 </div>
-                <div class="blockproduct">
+                <div class="blockproduct blockproduct2">
                     <img class="imageproduct" src="image/hqdefault 1.png">
                     <div class="blockcartbotton">
                         <div class="blockcart">
@@ -221,7 +247,7 @@
                         <img src="image/Add Cart (1).png" width="44px" height="44px">
                     </div>
                 </div>
-                <div class="blockproduct">
+                <div class="blockproduct1 blockproduct2">
                     <img class="imageproduct" src="image/Image (3).png">
                     <div class="blockcartbotton">
                         <div class="blockcart">
@@ -231,7 +257,7 @@
                         <img src="image/Add Cart (1).png" width="44px" height="44px">
                     </div>
                 </div>
-                <div class="blockproduct">
+                <div class="blockproduct1 blockproduct2">
                     <img class="imageproduct" src="image/Image (3).png">
                     <div class="blockcartbotton">
                         <div class="blockcart">
@@ -290,11 +316,11 @@
                 <h1 class="navour-poduserh">Our Products</h1>
                 <div class="tab-menu">
                     <div class="tab active" data-tab="all"><h3>ALL</h3></div>
-                    <div class="tab" data-tab="NEWEST"><h3>NEWEST</h3></div>
-                    <div class="tab" data-tab="TRENDING"><h3>TRENDING</h3></div>
-                    <div class="tab" data-tab="BEST SELLERS"><h3>BEST SELLERS</h3></div>
-                    <div class="tab" data-tab="FEATURED"><h3>FEATURED</h3></div>
-                    <div class="tab-indicator"></div>
+                    <div class="tab " data-tab="NEWEST"><h3>NEWEST</h3></div>
+                    <div class="tab " data-tab="TRENDING"><h3>TRENDING</h3></div>
+                    <div class="tab tab-none" data-tab="BEST SELLERS"><h3>BEST SELLERS</h3></div>
+                    <div class="tab tab-none" data-tab="FEATURED"><h3>FEATURED</h3></div>
+                    <div class="tab-indicator "></div>
                 </div>
             </div>
         </section>
@@ -311,7 +337,7 @@
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div>
-                            <img src="image/Add Cart.png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart.png" width="44px" height="44px">
                         </div>
                     </div>
                     <div class="card">
@@ -326,7 +352,7 @@
                                     <p1 class="old-price">$39</p1>
                                 </div>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
                     <div class="card">
@@ -336,7 +362,7 @@
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
                     <div class="card">
@@ -346,10 +372,10 @@
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>    
                     </div>
-                    <div class="card">
+                    <div class="card card2">
                         <div class="bcimage" style="background-image: url(image/Image\ \(10\).png);">
                             <img class="imgproduct" src="image/Products Status.png" width="49px" height="26px">
                         </div>
@@ -358,10 +384,10 @@
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card2">
                         <div class="bcimage" style="background-image: url(image/Image\ \(11\).png);">
                             <img class="imgproduct3" src="image/Products Status (1).png" width="54px" height="26px">
                         </div>
@@ -373,27 +399,27 @@
                                     <p1 class="old-price">$39</p1>
                                 </div>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
-                    <div class="card card1">
+                    <div class="card card1 card2">
                         <img class="imageproduct" src="image/Image (12).png">
                         <div class="blockcartbotton">
                             <div class="blockcart">
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div> 
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
-                    <div class="card card1">
+                    <div class="card card1 card2">
                         <img class="imageproduct" src="image/Image.png">
                         <div class="blockcartbotton">
                             <div class="blockcart">
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
                 </div>
@@ -410,7 +436,7 @@
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div>
-                            <img src="image/Add Cart.png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart.png" width="44px" height="44px">
                         </div>
                     </div>
                     <div class="card">
@@ -425,7 +451,7 @@
                                     <p1 class="old-price">$39</p1>
                                 </div>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
                     <div class="card">
@@ -435,7 +461,7 @@
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
                     <div class="card">
@@ -445,7 +471,7 @@
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>    
                     </div>
                     <div class="card">
@@ -457,7 +483,7 @@
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
                     <div class="card">
@@ -472,7 +498,7 @@
                                     <p1 class="old-price">$39</p1>
                                 </div>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
                     <div class="card">
@@ -482,7 +508,7 @@
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div> 
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
                     <div class="card">
@@ -492,7 +518,7 @@
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
                 </div>
@@ -509,7 +535,7 @@
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div>
-                            <img src="image/Add Cart.png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart.png" width="44px" height="44px">
                         </div>
                     </div>
                     <div class="card">
@@ -524,7 +550,7 @@
                                     <p1 class="old-price">$39</p1>
                                 </div>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
                     <div class="card">
@@ -534,20 +560,20 @@
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card2">
                         <img class="imageproduct" src="image/Image (3).png">
                         <div class="blockcartbotton">
                             <div class="blockcart">
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>    
                     </div>
-                    <div class="card card1">
+                    <div class="card card1 card2">
                         <div class="bcimage" style="background-image: url(image/Image\ \(10\).png);">
                             <img class="imgproduct" src="image/Products Status.png" width="49px" height="26px">
                         </div>
@@ -556,10 +582,10 @@
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
-                    <div class="card card1">
+                    <div class="card card1 card2">
                         <div class="bcimage" style="background-image: url(image/Image\ \(11\).png);">
                             <img class="imgproduct3" src="image/Products Status (1).png" width="54px" height="26px">
                         </div>
@@ -571,10 +597,10 @@
                                     <p1 class="old-price">$39</p1>
                                 </div>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card2">
                         <img class="imageproduct" src="image/Image (12).png">
                         <div class="blockcartbotton">
                             <div class="blockcart">
@@ -591,7 +617,7 @@
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
                 </div>
@@ -608,7 +634,7 @@
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div>
-                            <img src="image/Add Cart.png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart.png" width="44px" height="44px">
                         </div>
                     </div>
                     <div class="card card1">
@@ -623,7 +649,7 @@
                                     <p1 class="old-price">$39</p1>
                                 </div>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
                     <div class="card">
@@ -643,7 +669,7 @@
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>    
                     </div>
                     <div class="card">
@@ -655,7 +681,7 @@
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
                     <div class="card">
@@ -670,7 +696,7 @@
                                     <p1 class="old-price">$39</p1>
                                 </div>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
                     <div class="card">
@@ -680,7 +706,7 @@
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div> 
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
                     <div class="card">
@@ -690,7 +716,7 @@
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
                 </div>
@@ -707,7 +733,7 @@
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div>
-                            <img src="image/Add Cart.png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart.png" width="44px" height="44px">
                         </div>
                     </div>
                     <div class="card">
@@ -722,7 +748,7 @@
                                     <p1 class="old-price">$39</p1>
                                 </div>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
                     <div class="card">
@@ -732,7 +758,7 @@
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
                     <div class="card">
@@ -742,7 +768,7 @@
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>    
                     </div>
                     <div class="card">
@@ -754,7 +780,7 @@
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
                     <div class="card">
@@ -769,7 +795,7 @@
                                     <p1 class="old-price">$39</p1>
                                 </div>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
                     <div class="card card1">
@@ -779,7 +805,7 @@
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div> 
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
                     <div class="card card1">
@@ -789,7 +815,7 @@
                                 <a href="#" class="navedprodeuct">Library Stool Chair</a>
                                 <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                             </div>
-                            <img src="image/Add Cart (1).png" width="44px" height="44px">
+                            <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                         </div>
                     </div>
                 </div>
@@ -806,6 +832,15 @@
                 </div>
                 <div class="gridwcsau main">
                     <div class="blockwcsau1 ">
+                        <div class="mobilewsau">
+                            <div class="avatar">
+                                <div class="avatar1">
+                                    <img src="image/Image (14).png" alt="">
+                                    <p1 class="p1wsau">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet mi nec massa tincidunt blandit et eu sem.</p1>
+                                </div>
+                                <div class="name"><h3 class="h4glav" >Esther Howard</h3></div>
+                            </div>
+                        </div>
                         <div class="grinline">
                             <div class="grinline1">
                                 <p1>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet mi nec massa tincidunt blandit et eu sem. Maecenas laoreet ultrices diam dignissim posuere. Aenean ultrices dui at ipsum sagittis, pharetra lacinia dui faucibus. In ac bibendum ex. Aenean dolor massa, euismod sit amet suscipit et“</p1>
@@ -821,6 +856,15 @@
                         </div> 
                     </div>
                     <div class="blockwcsau">
+                        <div class="mobilewsau">
+                            <div class="avatar">
+                                <div class="avatar1">
+                                    <img src="image/Image (13).png" alt="">
+                                    <p1 class="p1wsau">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet mi nec massa tincidunt blandit et eu sem.</p1>
+                                </div>
+                                <div class="name"><h3 class="h4glav" >Kristin Watson</h3></div>
+                            </div>
+                        </div>
                         <div class="grinline">
                             <div class="grinline1">
                                 <p1>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet mi nec massa tincidunt blandit et eu sem. Maecenas laoreet ultrices diam dignissim posuere. Aenean ultrices dui at ipsum sagittis, pharetra lacinia dui faucibus. In ac bibendum ex. Aenean dolor massa, euismod sit amet suscipit et“</p1>
@@ -860,10 +904,10 @@
                             <a href="#" class="navedprodeuct">Library Stool Chair</a>
                             <a href="#" class="navedprodeuct"><h4 class="h4product">$20</h4></a>
                         </div>
-                        <img src="image/Add Cart.png" width="44px" height="44px">
+                        <img class="imgbuy" src="image/Add Cart.png" width="44px" height="44px">
                     </div>
                 </div>
-                <div class="blockproduct">
+                <div class="blockproduct ">
                     <div class="bcimage" style="background-image: url(image/Image\ \(1\).png);">
                         <img class="imgproduct3" src="image/Products Status (1).png" width="54px" height="26px">
                     </div>
@@ -875,10 +919,10 @@
                                 <p1 class="old-price">$39</p1>
                             </div>
                         </div>
-                        <img src="image/Add Cart (1).png" width="44px" height="44px">
+                        <img class="imgbuy" src="image/Add Cart (1).png" width="44px" height="44px">
                     </div>
                 </div>
-                <div class="blockproduct">
+                <div class="blockproduct blockproduct2">
                     <img class="imageproduct" src="image/Image (2).png">
                     <div class="blockcartbotton">
                         <div class="blockcart">
@@ -888,7 +932,7 @@
                         <img src="image/Add Cart (1).png" width="44px" height="44px">
                     </div>
                 </div>
-                <div class="blockproduct">
+                <div class="blockproduct blockproduct2">
                     <img class="imageproduct" src="image/Image (3).png">
                     <div class="blockcartbotton">
                         <div class="blockcart">
@@ -898,7 +942,7 @@
                         <img src="image/Add Cart (1).png" width="44px" height="44px">
                     </div>
                 </div>
-                <div class="blockproduct">
+                <div class="blockproduct blockproduct2">
                     <img class="imageproduct" src="image/Image (3).png">
                     <div class="blockcartbotton">
                         <div class="blockcart">
@@ -908,7 +952,7 @@
                         <img src="image/Add Cart (1).png" width="44px" height="44px">
                     </div>
                 </div>
-                <div class="blockproduct">
+                <div class="blockproduct blockproduct2">
                     <img class="imageproduct" src="image/Image (3).png">
                     <div class="blockcartbotton">
                         <div class="blockcart">
@@ -918,7 +962,7 @@
                         <img src="image/Add Cart (1).png" width="44px" height="44px">
                     </div>
                 </div>
-                <div class="blockproduct ">
+                <div class="blockproduct blockproduct2">
                     <img class="imageproduct" src="image/Image (3).png">
                     <div class="blockcartbotton">
                         <div class="blockcart">
@@ -928,7 +972,7 @@
                         <img src="image/Add Cart (1).png" width="44px" height="44px">
                     </div>
                 </div>
-                <div class="blockproduct">
+                <div class="blockproduct blockproduct2">
                     <img class="imageproduct" src="image/Image (3).png">
                     <div class="blockcartbotton">
                         <div class="blockcart">
@@ -938,7 +982,7 @@
                         <img src="image/Add Cart (1).png" width="44px" height="44px">
                     </div>    
                 </div>
-                <div class="blockproduct">
+                <div class="blockproduct blockproduct2">
                     <img class="imageproduct" src="image/Image (3).png">
                     <div class="blockcartbotton">
                         <div class="blockcart">
@@ -1105,7 +1149,32 @@
                 });
                 updateIndicator(activeTab);
                 });
-        </script>                                            
+        </script>
+    <script>
+        const burger = document.getElementById('burger');
+        const sidemenu = document.getElementById('sidemenu');
+      
+        burger.addEventListener('click', () => {
+          sidemenu.classList.toggle('open');
+          burger.classList.toggle('active'); 
+        });
+      </script>
+    <script>
+        const searchIcon = document.getElementById('search-icon');
+const searchInput = document.getElementById('search-input');
+
+searchIcon.addEventListener('click', () => {
+  // Добавляем/удаляем классы для анимации
+  searchInput.classList.toggle('open');
+  searchIcon.classList.toggle('clicked');
+  
+  // Фокус на поле ввода
+  if (searchInput.classList.contains('open')) {
+    searchInput.focus();
+  }
+});
+
+    </script>                                         
     </main>
 </body>
 </html>
